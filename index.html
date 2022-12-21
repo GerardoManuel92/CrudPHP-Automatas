@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inder&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <main class="contenedor">
+        <div class="contenedor__izquierdo">
+            <img src="../IMG/img1.jpeg" alt="Logo">
+        </div>
+        <div class="contenedor__derecho">
+            <h1>Iniciar Sesión</h1>
+            <form class="formulario" action="../PHP/login.php" method="post">
+                <fieldset>
+                    <legend>Identifíquese</legend>
+                    <div class="campos">
+                        <div class="campos__texto">
+                            <input class="campos__texto--texto" type="text" name="txtUsuario" id="user" placeholder="Usuario">
+                            <input class="campos__texto--texto" type="password" name="txtPassword" id="passwd" placeholder="Password">
+                            <input class="campos__texto--boton" type="submit" value="Entrar">
+                            <a class="link-registro" href="registrar.html">Registrarse</a>
+                        </div>                       
+                    </div>                                       
+                </fieldset>
+            </form>
+        </div>
+    </main>    
+</body>
+</html>

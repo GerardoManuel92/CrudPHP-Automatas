@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inder&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Registro de Usuarios</title>
+</head>
+<body>
+    <main class="contenedor">
+        <div class="contenedor__izquierdo">
+            <img class="img2" src="../IMG/img2.png" alt="logo2">
+        </div>
+        <div class="contenedor__derecho">
+            <h1>Registro de nuevos usuarios</h1>
+            <form class="formulario" id="formulario" action="../PHP/registro.php" method="post">
+                <fieldset>
+                    <legend>Completar el formulario</legend>
+                    <div class="registro">
+                        <div class="registro__campos">
+                            <label class="registro__campos--label" for="">Nombre</label>
+                            <input class="registro__campos--input" type="text" name="txtNombre" id="nombre">
+                        </div>
+                        <div class="registro__campos">
+                            <label class="registro__campos--label" for="">Apellidos</label>
+                            <input class="registro__campos--input" type="text" name="txtApellidos" id="apellidos">
+                        </div>
+                        <div class="registro__campos">
+                            <label class="registro__campos--label" for="">Alias</label>
+                            <input class="registro__campos--input" type="text" name="txtAlias" id="alias">
+                        </div>
+                        <div class="registro__campos">
+                            <label class="registro__campos--label" for="">Password</label>
+                            <input class="registro__campos--input" type="password" name="txtPassword1" id="pass1">
+                        </div>
+                        <div class="registro__campos">
+                            <label class="registro__campos--label" for="">Confirmar Password</label>
+                            <input class="registro__campos--input" type="password" name="txtPassword2" id="pass2">
+                        </div>
+                        <div class="registro__botones">
+                            <button class="boton" type="submit">
+                                <img src="../IMG/registrar.png" alt="Registrar">
+                            </button>
+                            <button class="boton" type="reset">
+                                <img src="../IMG/limpiar.png" alt="Limpiar">
+                            </button>
+                            <a class="boton" href="index.html">
+                                <img src="../IMG/salir.png" alt="Salir">
+                            </a>
+                        </div>                        
+                    </div>                    
+                </fieldset>
+            </form>
+        </div>
+    </main>  
+    <script src="../JS/registro.js"></script>  
+</body>
+</html>

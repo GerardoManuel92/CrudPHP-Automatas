@@ -1,0 +1,258 @@
+:root {
+
+    --color1: #41eab1;
+    --blanco: #ffffff;
+    --negro: #000000;
+    --verde: #4ce417;
+    --gris: #e6eee4;
+    --rojo: #ee260e;
+
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Inder', sans-serif;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 130rem;
+    height: 60rem;
+}
+
+.contenedor__izquierdo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color1);
+    height: 100%;
+}
+
+.contenedor__izquierdo img {
+    width: 30rem;
+    height: 45rem;
+}
+
+.contenedor__izquierdo .img2{
+    width: 50rem;
+    height: 45rem;
+}
+
+.contenedor__derecho {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contenedor__derecho h1 {
+    font-size: 3rem;
+    color: var(--negro);
+    text-align: center;
+}
+
+.formulario {
+    margin: auto;
+}
+
+.formulario fieldset {
+    display: flex;
+    justify-content: center;
+    width: 60rem;
+    height: 50rem;
+    margin-left: 5rem;
+    border-radius: 1rem;
+}
+
+legend {
+    font-size: 2.6rem;
+}
+
+.campos,
+.registro {
+    margin: auto;
+}
+
+.campos__texto {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.campos__texto--texto {
+    padding: 2rem;
+    width: 55rem;
+    font-size: 3rem;
+    border-style: none;
+    background-color: var(--gris);
+    border-radius: 1rem;
+}
+
+.campos__texto--boton {
+    padding: 2rem;
+    font-size: 2.4rem;
+    font-weight: bold;
+    background-color: var(--verde);
+    color: var(--negro);
+    border-radius: 1rem;
+}
+
+.campos__texto--boton:hover{
+    cursor: pointer;
+    color: var(--color1);
+    border: 1px solid var(--negro);
+}
+
+.link-registro{
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    color: var(--negro);
+}
+
+.link-registro:hover{
+    cursor: pointer;
+    color: var(--color1);
+}
+
+/*  FORMULARIO DE REGISTROS */
+
+.registro__campos{
+    display: flex;
+    justify-content: space-between;    
+    margin-top: 2rem;
+    column-gap: 4rem;
+}
+
+.registro__campos--label,
+.registro__campos--input{
+    font-size: 2rem;
+}
+
+.registro__campos--input{
+    padding: 1rem;
+    border-style: none;
+    border-radius: 1rem;
+    background-color: var(--gris);
+}
+
+.registro__botones{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.boton{
+    display: flex;
+    justify-content: center;
+    border: 1px solid var(--negro);
+    background-color: var(--blanco);
+    border-radius: 1rem;
+    width: 8rem;
+    height: 8rem;
+}
+
+.boton img{    
+    width: 7rem;
+    height: 7rem;
+}
+
+/*      TABLAS DE REGISTROS     */
+
+.contenedor-datos{
+    display: flex;
+    justify-content: center;
+    width: 130rem;
+    
+}
+
+
+
+.titulo-listado{
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.contenedor__tabla{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60rem;
+    margin-left: 3rem;
+    font-size: 2rem;
+}
+
+.tabla, .tabla__fila{
+    border: 3px solid var(--color1);
+    
+}
+.tabla__fila, .tabla__columna, .tabla__columna--titulo{
+    height: 7rem;
+    width: 17rem;
+}
+.tabla__columna{
+    border: 3px solid var(--color1);
+    font-size: 2rem;    
+}
+
+.tabla__columna--titulo{
+    border: 3px solid var(--color1);
+    font-size: 2.8rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.boton-accion{
+    padding: 1rem;
+    width: 15rem;
+    border-radius: 1rem;
+    font-weight: bold;
+    color: var(--blanco);
+    text-decoration: none;
+}
+
+.boton-accion:hover{
+    cursor: pointer;
+}
+
+.boton-accion--modificar{
+    background-color: var(--verde);
+    font-weight: bold;
+}
+
+.boton-accion--eliminar{
+    background-color: var(--rojo);
+}
+
+/*  formulario  de  modificaciones  */
+
+.contenedor__registros{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor__registros--formulario{    
+    width: 60rem;
+}
+
+.contenedor__encabezado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    
+}
